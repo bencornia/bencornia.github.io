@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@800&display=swap');
 
 :root {
-    --clr-primary: #0A0A0A;
-    --clr-text: #FFFFFF;
-    --clr-nav: #858585;
+    --clr-primary: #1F1F1F;
+    --clr-text: #D6D6D6;
+    --clr-nav: #141414;
+    --clr-nav-hover: #1F1F1F;
+    --clr-nav-active: #D6D6D6;
+    --clr-nav-shadow: #0A0A0A;
+    
 
     --ff-primary: 'Open Sans', sans-serif;
     --ff-heading: 'Roboto Slab', serif;
@@ -29,6 +33,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 body,
 h1,
 h2,
@@ -43,17 +49,10 @@ h1,
 h2,
 h3 {
     font-family: var(--ff-heading);
-    line-height: 1;
+    line-height: 2;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--clr-nav);
-}
+
 
 .fullscreen {
     height: 100%;
@@ -73,12 +72,47 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--clr-nav);
+    box-shadow: 0px 5px 5px var(--clr-nav-shadow);
+}
+
+a {
+    color: var(--clr-text);
+    text-decoration: none;    
+}
+
+a:hover {
+    color: var(--clr-primary);
+    background: var(--clr-nav-active);
+}
+
+a:active {
+    color: var(--clr-primary);
+    background: var(--clr-nav-active);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li {
+    padding: .25em;
+    margin: 0 .5em 0 .5em;
+    
 }
 
 .landing-page {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
    
 }
 .meter {
