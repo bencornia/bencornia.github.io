@@ -29,8 +29,8 @@ body {
     font-family: var(--ff-primary);
     background-color: var(--clr-primary);
     color: var(--clr-text);
-    font-size: 1.3125rem;
-    line-height: 1.6;
+    font-size: 1.25em;
+    line-height: 1.6em;
 }
 
 
@@ -60,11 +60,16 @@ h3 {
 
 section {
     padding: 3rem 0;
+    
 }
 
 .container {
-    margin-inline: auto;
-    width: min(90%, 70.5rem);
+    margin-inline: auto;   
+    width: min(90%, 76rem);
+    padding: .5rem;
+   
+   
+    
 }
 
 nav {
@@ -74,7 +79,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: var(--clr-nav);
     box-shadow: 0px 5px 5px var(--clr-nav-shadow);
 }
@@ -111,8 +116,8 @@ li {
 
 .landing-page {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
    
 }
 .meter {
