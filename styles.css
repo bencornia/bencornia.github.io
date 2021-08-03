@@ -72,17 +72,18 @@ section {
     
   
     
-nav a {
+.navbar a {
     color: var(--clr-text);
-    text-decoration: none;    
+    text-decoration: none;
+   
 }
 
-nav a:hover {
+.navbar a:hover {
     color: var(--clr-primary);
     background: var(--clr-nav-active);
 }
 
-nav a:active {
+.navbar a:active {
     color: var(--clr-primary);
     background: var(--clr-nav-active);
 }
@@ -93,6 +94,7 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    
 
 }
 
@@ -192,7 +194,10 @@ footer {
 }
 
 
-
+.about-info p {
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
 
 
 
